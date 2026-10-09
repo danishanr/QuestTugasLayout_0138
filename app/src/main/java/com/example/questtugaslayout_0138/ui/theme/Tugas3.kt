@@ -68,6 +68,13 @@ fun TugasKetiga(modifier: Modifier = Modifier){
             warna = colorResource(R.color.card_3_bg)
         )
 
+        CardCustom(
+            nama = stringResource(R.string.nama_4),
+            nim = stringResource(R.string.nim_4),
+            alamat = stringResource(R.string.alamat_4),
+            warna = colorResource(R.color.card_4_bg)
+        )
+
 
     }
 }
