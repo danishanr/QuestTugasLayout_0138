@@ -80,7 +80,7 @@ fun TugasKetiga(modifier: Modifier = Modifier) {
         fontSize = 12.sp,
         modifier = Modifier
             .align(Alignment.BottomCenter)
-            .padding(bottom = 30,dp)
+            .padding(bottom = 30.dp)
     )
 }
 
@@ -95,5 +95,12 @@ fun CardCustom(
     fontNama: FontFamily = FontFamily.Default,
     bobotNama: FontWeight = FontWeight.Bold
 ) {
+    Card(
+        modifier = Modifier
+            fillMaxWidth()
+            .padding(all = 5.dp),
+        verticalAlignment = Alignment.CenterHorizontally
+
+    )
 
 }
