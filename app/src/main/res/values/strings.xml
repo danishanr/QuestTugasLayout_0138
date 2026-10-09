@@ -14,5 +14,9 @@
     <string name="nama_3">Pham Hanni</string>
     <string name="nim_3">20240140140</string>
     <string name="alamat_3">Melbourne, Australia</string>
+    
+    <string name="nama_4">Mo Danielle</string>
+    <string name="nim_4">20240140141</string>
+    <string name="alamat_4">Newcastle, Australia</string>
 
 </resources>
