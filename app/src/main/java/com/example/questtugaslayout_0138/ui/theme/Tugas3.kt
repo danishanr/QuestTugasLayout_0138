@@ -2,6 +2,7 @@ package com.example.questtugaslayout_0138.ui.theme
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -100,12 +101,17 @@ fun CardCustom(
 ) {
     Card(
         modifier = Modifier
-            fillMaxWidth()
+            .fillMaxWidth()
             .padding(all = 5.dp),
-        colors = CardDefaults.cardColors()
+        colors = CardDefaults.cardColors(
             containerColor = warna
-    )
-    {
-
+        )
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(all = 8.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) { }
     }
 }
