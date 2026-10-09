@@ -31,65 +31,66 @@ import com.example.questtugaslayout_0138.R
 fun TugasKetiga(modifier: Modifier = Modifier) {
     Box(
         modifier = Modifier.fillMaxSize()
-    )
-    Column(
-        modifier = Modifier
-            .padding(top = 50.dp)
-            .fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Column(
+            modifier = Modifier
+                .padding(top = 50.dp)
+                .fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                stringResource(R.string.prodi),
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold
+            )
+            Text(
+                stringResource(R.string.univ),
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold
+            )
+            Spacer(modifier = Modifier.height((25.dp)))
+
+            CardCustom(
+                nama = stringResource(R.string.nama_1),
+                nim = null,
+                alamat = stringResource(R.string.alamat_1),
+                warna = colorResource(R.color.card_1_bg),
+                warnaAlamat = colorResource(R.color.text_kuning),
+                fontNama = FontFamily.Cursive,
+                bobotNama = FontWeight.Normal
+            )
+
+            CardCustom(
+                nama = stringResource(R.string.nama_2),
+                nim = stringResource(R.string.nim_2),
+                alamat = stringResource(R.string.alamat_2),
+                warna = colorResource(R.color.card_2_bg),
+                warnaAlamat = colorResource(R.color.text_kuning)
+            )
+
+            CardCustom(
+                nama = stringResource(R.string.nama_3),
+                nim = stringResource(R.string.nim_3),
+                alamat = stringResource(R.string.alamat_3),
+                warna = colorResource(R.color.card_3_bg)
+            )
+
+            CardCustom(
+                nama = stringResource(R.string.nama_4),
+                nim = stringResource(R.string.nim_4),
+                alamat = stringResource(R.string.alamat_4),
+                warna = colorResource(R.color.card_4_bg)
+            )
+        }
+
         Text(
-            stringResource(R.string.prodi),
-            fontSize = 28.sp,
-            fontWeight = FontWeight.Bold
-        )
-        Text(
-            stringResource(R.string.univ),
-            fontSize = 16.sp,
-            fontWeight = FontWeight.Bold
-        )
-        Spacer(modifier = Modifier.height((25.dp)))
-
-        CardCustom(
-            nama = stringResource(R.string.nama_1),
-            nim = null,
-            alamat = stringResource(R.string.alamat_1),
-            warna = colorResource(R.color.card_1_bg),
-            warnaAlamat = colorResource(R.color.text_kuning),
-            fontNama = FontFamily.Cursive,
-            bobotNama = FontWeight.Normal
-        )
-
-        CardCustom(
-            nama = stringResource(R.string.nama_2),
-            nim = stringResource(R.string.nim_2),
-            alamat = stringResource(R.string.alamat_2),
-            warna = colorResource(R.color.card_2_bg),
-            warnaAlamat = colorResource(R.color.text_kuning)
-        )
-
-        CardCustom(
-            nama = stringResource(R.string.nama_3),
-            nim = stringResource(R.string.nim_3),
-            alamat = stringResource(R.string.alamat_3),
-            warna = colorResource(R.color.card_3_bg)
-        )
-
-        CardCustom(
-            nama = stringResource(R.string.nama_4),
-            nim = stringResource(R.string.nim_4),
-            alamat = stringResource(R.string.alamat_4),
-            warna = colorResource(R.color.card_4_bg)
+            stringResource(R.string.copy),
+            fontSize = 12.sp,
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 30.dp)
         )
     }
-
-    Text(
-        stringResource(R.string.copy),
-        fontSize = 12.sp,
-        modifier = Modifier
-            .align(Alignment.BottomCenter)
-            .padding(bottom = 30.dp)
-    )
 }
 
 @Composable
