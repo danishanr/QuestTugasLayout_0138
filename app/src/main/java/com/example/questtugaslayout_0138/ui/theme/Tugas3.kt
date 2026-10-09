@@ -125,6 +125,16 @@ fun CardCustom(
                     .padding(5.dp)
             )
             Spacer(modifier = Modifier.width(15.dp))
+
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    nama,
+                    fontSize = 22.sp,
+                    fontFamily = fontNama,
+                    fontWeight = bobotNama,
+                    color = colorResource(R.color.white)
+                )
+            }
         }
     }
 }
