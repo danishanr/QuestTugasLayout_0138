@@ -147,6 +147,13 @@ fun CardCustom(
                     color = warnaAlamat
                 )
             }
+            Image(
+                painter = painterResource(R.drawable.logo_umy),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(70.dp)
+                    .padding(5.dp)
+            )
         }
     }
 }
