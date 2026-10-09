@@ -2,7 +2,9 @@ package com.example.questtugaslayout_0138.ui.theme
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -31,5 +33,13 @@ fun TugasKetiga(modifier: Modifier = Modifier){
             fontSize = 28.sp,
             fontWeight = FontWeight.Bold
         )
+        Text(
+            stringResource(R.string.univ),
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Bold
+        )
+        Spacer(modifier = Modifier.height((25.dp)))
+
+
     }
 }
