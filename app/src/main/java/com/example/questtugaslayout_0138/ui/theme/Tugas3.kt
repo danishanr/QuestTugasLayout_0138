@@ -43,6 +43,17 @@ fun TugasKetiga(modifier: Modifier = Modifier){
         )
         Spacer(modifier = Modifier.height((25.dp)))
 
+        CardCustom(
+            nama = stringResource(R.string.nama_1),
+            nim = null,
+            alamat = stringResource(R.string.alamat_1),
+            warna = colorResource(R.color.card_1_bg),
+            warnaAlamat = colorResource(R.color.text_kuning),
+            fontNama = FontFamily.Cursive,
+            bobotNama = FontWeight.Normal
+
+        )
+
 
     }
 }
