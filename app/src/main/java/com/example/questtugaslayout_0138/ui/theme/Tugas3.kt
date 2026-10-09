@@ -18,10 +18,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.questtugaslayout_0138.R
-import java.lang.reflect.Modifier
 
 @Composable
-fun TugasKetiga(modifier: Modifier = Modifier){
+fun TugasKetiga(modifier: Modifier = Modifier) {
     Box(
         modifier = Modifier.fillMaxSize()
     )
@@ -74,9 +73,15 @@ fun TugasKetiga(modifier: Modifier = Modifier){
             alamat = stringResource(R.string.alamat_4),
             warna = colorResource(R.color.card_4_bg)
         )
-
-
     }
+
+    Text(
+        stringResource(R.string.copy),
+        fontSize = 12.sp,
+        modifier = Modifier
+            .align(Alignment.BottomCenter)
+            .padding(bottom = 30,dp)
+    )
 }
 
 @Composable
