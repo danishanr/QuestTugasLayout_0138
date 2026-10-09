@@ -51,7 +51,14 @@ fun TugasKetiga(modifier: Modifier = Modifier){
             warnaAlamat = colorResource(R.color.text_kuning),
             fontNama = FontFamily.Cursive,
             bobotNama = FontWeight.Normal
+        )
 
+        CardCustom(
+            nama = stringResource(R.string.nama_2),
+            nim = stringResource(R.string.nim_2),
+            alamat = stringResource(R.string.alamat_2),
+            warna = colorResource(R.color.card_2_bg),
+            warnaAlamat = colorResource(R.color.text_kuning)
         )
 
 
