@@ -134,6 +134,18 @@ fun CardCustom(
                     fontWeight = bobotNama,
                     color = colorResource(R.color.white)
                 )
+                if (nim != null) {
+                    Text(
+                        nim,
+                        fontSize = 15.sp,
+                        color = colorResource(R.color.text_nim)
+                    )
+                }
+                Text(
+                    alamat,
+                    fontSize = 15.sp,
+                    color = warnaAlamat
+                )
             }
         }
     }
